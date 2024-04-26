@@ -1,0 +1,93 @@
+:root {
+  --text-color-primary: #add8e6;
+  --text-color-secondary: #ffa07a;
+  --button-color-secondary: #565659;
+  --background-color-primary: #ca4242;
+  --background-color-secondary: #2525bd;
+  --background-color-secondary-2: #2b3a42;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: var(--text-color-primary);
+  background: linear-gradient(
+    135deg,
+    var(--background-color-primary),
+    var(--background-color-secondary)
+  );
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  border: 3px ridge var(--background-color-secondary);
+  background-color: var(--text-color-primary);
+  display: flex;
+  flex-direction: column;
+  min-width: 125px;
+  list-style-type: none;
+}
+
+nav li a {
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  outline: 4px ridge var(--background-color-primary);
+  color: var(--text-color-primary);
+  background-color: var(--background-color-secondary);
+  transition: background-color 1s;
+  text-decoration: underline;
+}
+
+img {
+  margin-top: 10px;
+  border: 3px ridge;
+  border-radius: 50%;
+}
+
+.button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 3px ridge var(--background-color-secondary-2);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 3px ridge var(--background-color-primary);
+  color: var(--text-color-secondary);
+  background-color: var(--button-color-secondary);
+}
+
+hr {
+  margin: 3rem auto 1rem;
+}
+
+.footer {
+  color: #ffa07a;
+  text-align: start;
+  padding: 2rem;
+}
