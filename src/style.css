@@ -28,7 +28,7 @@ body {
 
 h1 {
   font-size: 2rem;
-  margin: 2rem;
+  margin: 1.5rem;
 }
 
 .nav-bar {
@@ -41,7 +41,8 @@ nav li {
   background-color: var(--text-color-primary);
   display: flex;
   flex-direction: column;
-  min-width: 125px;
+  min-width: 180px;
+  margin: 3px;
   list-style-type: none;
 }
 
@@ -57,6 +58,7 @@ nav li a:hover {
   background-color: var(--background-color-secondary);
   transition: background-color 1s;
   text-decoration: underline;
+  font-style: italic;
 }
 
 img {
@@ -74,12 +76,26 @@ img {
   align-items: center;
   padding: 5px;
   cursor: pointer;
+  transition: all ease-in-out 1s;
 }
 
 button:hover {
   border: 3px ridge var(--background-color-primary);
   color: var(--text-color-secondary);
   background-color: var(--button-color-secondary);
+  transition: all ease-in-out 1s;
+}
+
+button img {
+  transition: all ease-in-out 2s;
+}
+
+button:hover img {
+  /* transform: rotateX("90deg"); */
+  height: 65px;
+  width: 65px;
+  transform: rotate(1turn);
+  transition: all ease-in-out 2s;
 }
 
 hr {
@@ -89,5 +105,5 @@ hr {
 .footer {
   color: #ffa07a;
   text-align: start;
-  padding: 2rem;
+  padding: 1.5rem;
 }
